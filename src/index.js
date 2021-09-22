@@ -23,6 +23,10 @@ function logRequest(request, response, next) {
     return next();
 }
 
+function validateProjectId(request, response, next) {
+
+}
+
 app.use(logRequest);
 
 app.get('/projects', (request, response) => {
